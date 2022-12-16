@@ -18,7 +18,7 @@ function App() {
 		}
 	}, [setValue, user]);
 
-	const throttlingFn = useThrottle(refreshPage, 10000);
+	const throttlingFn = useThrottle(refreshPage, 1000);
 	if (error) {
 		return <h1>{error}</h1>;
 	}
